@@ -6,9 +6,9 @@
 Console.WriteLine ("Введите число: ");
 string str = Console.ReadLine()!;
 
-int[] numbers = str.Select(x => int.Parse(x.ToString())).ToArray();
+int sum = str.Select(x => int.Parse(x.ToString())).Sum();
 
-Console.WriteLine("Сумма: " + numbers.Sum());
+Console.WriteLine("Сумма: " + sum);
 
 /* 9-я строка переводит число в массив типа {1, 2, 3...}
 11-я строка сразу суммирует числа из массива типа этого типа */
